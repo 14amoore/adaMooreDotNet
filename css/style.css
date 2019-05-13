@@ -1,0 +1,147 @@
+/*@import url(https://fonts.googleapis.com/css?family=Montserrat:700);*/
+@import url("https://use.typekit.net/vrj7vyn.css");
+@media only screen and (max-width: 600px) {
+  .inner {
+    width: 100%;
+    height: auto;
+  }
+}
+
+body {
+  height: 100%;
+  transition: 1s all;
+  margin: 0 auto;
+  background: hsl(282, 100%, 0%);
+  color: hsl(295°, 100%, 77%);
+}
+
+p {
+  font-family: "mono45-headline", monospace;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 5em;
+  margin: 0;
+  line-height: 1.2em;
+  margin-bottom: 150px;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.inner {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 7% 10%;
+}
+
+.slim {
+  font-family: "mono45-headline", monospace;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 3em;
+  margin: 0;
+  line-height: 1.2em;
+  margin-bottom: 20px;
+}
+
+.disc {
+  font-family: "mono45-headline", monospace;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 3em;
+  margin: 0;
+  text-align: center;
+}
+
+.resume {
+  background: hsl(360, 100%, 100%);
+}
+
+svg {
+  width:100%;
+}
+
+h1 {
+  font-size: 32px;
+  text-align: right;
+  width: 100%;
+}
+
+h2 {
+  font-family: "mono45-headline", monospace;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 5em;
+  margin: 0;
+  line-height: 1.2em;
+  margin-bottom: 150px;
+}
+
+h3 {
+  font-family: "mono45-headline", monospace;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 5em;
+  margin: 0;
+  line-height: 1.2em;
+  margin-bottom: 50px;
+}
+
+h4{
+  font-family: "mono45-headline", monospace;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 5em;
+  margin: 0;
+  line-height: .85em;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+#graffContainer {
+  width: 100%;
+  height: auto;
+}
+
+#tupa-container {
+  display: grid;
+  height: 100%;
+  width: auto;
+  grid-template-columns: auto, auto;
+}
+
+.ogColor {
+  background: hsl(104, 0%, 6%);
+  color: hsl(120, 22%, 98%);
+}
+
+.changeColor {
+  background: hsl(120, 22%, 98%);
+  color: hsl(104, 0%, 6%);
+}
+.changeColor2 {
+  background: hsl(12, 0%, 45%);
+  color: hsl(120, 2%, 82%);
+}
+.changeColor3 {
+  background: hsl(120, 2%, 82%);
+  color: hsl(12, 0%, 45%);
+}
+
+.changeColor4 {
+  background: hsl(76, 0%, 50%);
+  color: hsl(120, 22%, 98%);
+}
+
+.changeColor5 {
+  background: hsl(104, 0%, 6%);
+  color: hsl(76, 0%, 50%);
+}
+
+#email {
+  text-decoration: none;
+}
