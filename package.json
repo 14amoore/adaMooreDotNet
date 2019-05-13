@@ -16,7 +16,8 @@
     "url": "https://github.com/14amoore/adaMooreDotNet/issues"
   },
   "homepage": "https://github.com/14amoore/adaMooreDotNet#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "eslint": "^5.16.0"
   }
 }
