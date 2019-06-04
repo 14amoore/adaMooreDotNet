@@ -1,5 +1,5 @@
 /*@import url(https://fonts.googleapis.com/css?family=Montserrat:700);*/
-@import url("https://use.typekit.net/vrj7vyn.css");
+@import url('https://use.typekit.net/vrj7vyn.css');
 @media only screen and (max-width: 600px) {
   .inner {
     width: 100%;
@@ -16,7 +16,7 @@ body {
 }
 
 p {
-  font-family: "mono45-headline", monospace;
+  font-family: 'mono45-headline', monospace;
   font-weight: 500;
   font-style: normal;
   font-size: 5em;
@@ -39,7 +39,7 @@ p {
 }
 
 .slim {
-  font-family: "mono45-headline", monospace;
+  font-family: 'mono45-headline', monospace;
   font-weight: 500;
   font-style: normal;
   font-size: 3em;
@@ -49,7 +49,7 @@ p {
 }
 
 .disc {
-  font-family: "mono45-headline", monospace;
+  font-family: 'mono45-headline', monospace;
   font-weight: 100;
   font-style: normal;
   font-size: 3em;
@@ -62,7 +62,7 @@ p {
 }
 
 svg {
-  width:100%;
+  width: 100%;
 }
 
 h1 {
@@ -72,7 +72,7 @@ h1 {
 }
 
 h2 {
-  font-family: "mono45-headline", monospace;
+  font-family: 'mono45-headline', monospace;
   font-weight: 500;
   font-style: normal;
   font-size: 5em;
@@ -82,22 +82,23 @@ h2 {
 }
 
 h3 {
-  font-family: "mono45-headline", monospace;
+  font-family: 'mono45-headline', monospace;
   font-weight: 500;
   font-style: normal;
   font-size: 5em;
   margin: 0;
   line-height: 1.2em;
   margin-bottom: 50px;
+  padding-top: 10px;
 }
 
-h4{
-  font-family: "mono45-headline", monospace;
+h4 {
+  font-family: 'mono45-headline', monospace;
   font-weight: 500;
   font-style: normal;
   font-size: 5em;
   margin: 0;
-  line-height: .85em;
+  line-height: 0.85em;
   margin-top: 10px;
   margin-bottom: 0;
 }
