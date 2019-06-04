@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>Sonified Social</title>
+  </head>
+  <body class="ogColor">
+    <h3>Sonified Social 🔊</h3>
+    <video width="85%" controls>
+      <source src="./assets/MS2_Major_Major2.mp4" type="video/mp4" />
+    </video>
+    <p class="slim">
+      This project is an auditory interpretation of what I believe is actually
+      happening on Twitter. It opens a live stream of tweets, and then passes
+      each tweet through sentiment analysis. The bird songs are triggered by
+      their sentiment analysis score. The sentiment analysis software returns a
+      whole integer between -5 and 5, -5 being the most negative and 5 being the
+      most positive. There is a unique bird song for each value. A random 10%
+      percent of all tweets received are read by one of the five voices native
+      to macintosh computers.
+    </p>
+    <p class="slim">
+      Twitter is fundamentally misleading, Twitter claims to be a place for
+      people to have conversations. What makes it misleading is that the
+      interactions people are having on twitter bear none of the hallmarks of
+      conversation. The most obvious difference being that interactions on
+      twitter are not oral, they are mediated by the platform and read from
+      screens. The interactions are not happening in real time. Tweets can be
+      read and replied to years after they are sent out into the world. The
+      conversations are not held between discrete parties. A person posting a
+      tweet has no idea who will eventually read this tweet, they have even less
+      certainty who will respond to it if anyone. The interactions happening on
+      twitter are more akin to bird song in the sense that they are functional
+      communication rather than conversational communication.
+    </p>
+    <p class="slim"></p>
+    <p class="slim">
+      This project was made using node.js, and the node packages sentiment,
+      twit, say, and play-sound.
+    </p>
+    <p class="slim"><a href="index.html"><- Back</a></p>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
