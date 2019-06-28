@@ -143,6 +143,26 @@ h4 {
   color: hsl(76, 0%, 50%);
 }
 
+.changeColor6 {
+  background: hsl(295, 100%, 77%);
+  color: hsl(300, 1%, 19%);
+}
+
+.changeColor7 {
+  background: hsl(300, 1%, 19%);
+  color: hsl(295, 100%, 77%);
+}
+
+.changeColor8 {
+  background: hsl(110, 86%, 46%);
+  color: hsl(120, 4%, 22%);
+}
+
+.changeColor9 {
+  background: hsl(120, 4%, 22%);
+  color: hsl(110, 86%, 46%);
+}
+
 #email {
   text-decoration: none;
 }
