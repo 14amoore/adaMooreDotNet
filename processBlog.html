@@ -134,6 +134,52 @@
       <a href="https://14amoore.github.io/vueDead/">vueDead</a> &amp;
       <a href="https://14amoore.github.io/reactDead/">reactDead</a>
     </p>
+    <h3>Week 5: 6/27</h3>
+    <p class="slim">
+      This week I learned about prototypical inheritance and features added to
+      JS in the 6th edition of ECMA Script(ES6). I have to say I’m pretty
+      relieved about this week. Reading first about prototypical inheritance,
+      and then working through the
+      <a
+        href="https://www.khanacademy.org/computing/computer-programming/programming/object-oriented/pt/object-types"
+        >Khan Academy tutorial</a
+      >
+      that is available for it gave me a much better understanding of how
+      inheritance works in JavaScript.
+    </p>
+    <p class="slim">
+      Inheritance is actually one of the most interesting features of JS. Where
+      other languages have numerous types of constructs, JS has only one
+      construct, Objects. Each object has a private property that holds a link
+      to another object called its prototype, this continues until an object
+      with null as its prototype is reached. Null has no prototype and acts as
+      the final link in the prototype chain. According to what I’ve read many
+      people coming from other programming languages view this as a flaw, when
+      in fact it is an asset when used properly.
+    </p>
+    <p class="slim">
+      This brings us to JS objects. JS objects are dynamic containers of
+      properties, JS objects have a link to the prototype object. When trying to
+      access a property of an object the property will be sought on the object
+      and the prototype of the object. This will go on until either a property
+      with a matching name is found or the end of the inheritance chain is
+      reached. In JS any function can be added to an object in the form of a
+      property.
+    </p>
+    <p class="slim">
+      ES6 is where a lot of powerful features were added to JS. ES 6 is where
+      both const and let where introduced. Before this only var was available to
+      assign variables.
+    </p>
+    <p class="slim">
+      Arrow functions are another new and popular feature of ES6. Arrow
+      functions allow for shorter syntax when writing functions. The function
+      and return keywords are not needed, nor are curly braces. BUT arrow
+      functions do not have their own this property. Arrow functions also must
+      be declared before they are used, unlike ordinary functions. So, while
+      arrow functions are immensely useful they do have some pretty serious
+      shortcomings.
+    </p>
     <p class="slim"><a href="index.html"><- Back</a></p>
   </body>
   <script src="js/scripts.js"></script>
