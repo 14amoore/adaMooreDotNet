@@ -180,6 +180,52 @@
       arrow functions are immensely useful they do have some pretty serious
       shortcomings.
     </p>
+    <h3>Week 6: 7/4</h3>
+    <p class="slim">
+      I spent this week learning about the Canvas API. “The Canvas API allows
+      for graphics to be drawn using JavaScript. This is API is used for
+      animation, game graphics, data viz, photo manipulation, and real time
+      video processing (this definition is quoted from
+      <a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API"
+        >MDN web docs.)</a
+      >"
+    </p>
+    <p class="slim">
+      I chose to focus on the drawing of graphics, first using WebGL, and then
+      using threejs . WebGL is an API used to draw 2D and 3D graphics using
+      JavaScript. WebGL uses only points, lines, and triangles to draw. Anything
+      can be drawn using points, lines, and triangles, BUT you need an awful lot
+      of these basic components to draw anything that is truly interesting.
+    </p>
+    <p class="slim">
+      WebGL is notorious for the large amount of code it requires to render
+      relatively simple graphics. After writing over 450 lines of JavaScript and
+      many hours following
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Tutorial/Getting_started_with_WebGL"
+        >the MDN tutorial</a
+      >
+      about WebGL I was able to create
+      <a href="/webGl.html">a 3D cube that rotates</a>, each side is a different
+      color, and the cube itself is nicely lit.
+    </p>
+    <p class="slim">
+      Unfortunately writing this much code to produce a simple 3D animation
+      would make WebGL a somewhat onerous API to utilize for anything but the
+      most simple animations. So why learn anything about WebGL? So I can
+      understand what threejs is doing!
+    </p>
+    <p class="slim">
+      <a href="https://threejs.org/">Threejs</a> is a library that sits on top
+      of the WebGL API and makes the API significantly easier to use. Threejs
+      does not use WebGL exclusively but it is safe to say WebGL is the
+      cornerstone of threejs. Using threejs is was able to make a much
+      <a href="https://adamoore.net/threejs.html"
+        >more interesting 3D animation</a
+      >
+      in about the same amount of time it took me to create a rotating, colorful
+      cube using pure WebGL.
+    </p>
     <p class="slim"><a href="index.html"><- Back</a></p>
   </body>
   <script src="js/scripts.js"></script>
