@@ -167,6 +167,16 @@ h4 {
   color: hsl(110, 86%, 46%);
 }
 
+.changeColor10 {
+  background: rgb(3, 218, 251);
+  color: hsl(120, 4%, 22%);
+}
+
+.changeColor11 {
+  background: hsl(120, 4%, 22%);
+  color: rgb(3, 218, 251);
+}
+
 #email {
   text-decoration: none;
 }

@@ -1,5 +1,17 @@
 $(function() {
   $(window).scroll(function() {
+    if ($(this).scrollTop() > 11000) {
+      $('body').addClass('changeColor11');
+    }
+    if ($(this).scrollTop() < 11000) {
+      $('body').removeClass('changeColor11');
+    }
+    if ($(this).scrollTop() > 9900) {
+      $('body').addClass('changeColor10');
+    }
+    if ($(this).scrollTop() < 9900) {
+      $('body').removeClass('changeColor10');
+    }
     if ($(this).scrollTop() > 8800) {
       $('body').addClass('changeColor9');
     }
