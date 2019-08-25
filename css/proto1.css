@@ -1,0 +1,77 @@
+@import url('https://use.typekit.net/vvi0euc.css');
+
+body {
+  font-family: prohibition, sans-serif;
+  font-size: xx-large;
+  font-weight: 400;
+  font-style: italic;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 33vh 33vh 33vh;
+  grid-gap: 10px;
+  align-content: space-around;
+  justify-content: space-between;
+}
+
+#c {
+  background-color: aqua;
+}
+
+#d {
+  background-color: chartreuse;
+}
+
+#e {
+  background-color: coral;
+}
+
+#f {
+  background-color: deeppink;
+}
+
+#g {
+  background-color: rgb(196, 63, 205);
+}
+
+#a {
+  background-color: yellow;
+}
+
+#b {
+  background-color: indigo;
+}
+
+#c:hover {
+  background-color: rgb(255, 178, 70);
+}
+
+#d:hover {
+  background-color: red;
+}
+
+#e:hover {
+  background-color: rgb(66, 66, 254);
+}
+
+#f:hover {
+  background-color: rgb(130, 255, 47);
+}
+
+#g:hover {
+  background-color: rgb(225, 255, 0);
+}
+
+#a:hover {
+  background-color: blueviolet;
+}
+
+#b:hover {
+  background-color: darkorange;
+}

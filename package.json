@@ -16,7 +16,9 @@
     "url": "https://github.com/14amoore/adaMooreDotNet/issues"
   },
   "homepage": "https://github.com/14amoore/adaMooreDotNet#readme",
-  "dependencies": {},
+  "dependencies": {
+    "tone": "^13.4.9"
+  },
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",

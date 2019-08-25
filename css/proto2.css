@@ -1,0 +1,19 @@
+@import url('https://use.typekit.net/jbf0fbd.css');
+
+body {
+  font-family: prohibition, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  background-color: rgb(255, 131, 222);
+  color: rgb(57, 57, 57);
+}
+
+header {
+  font-size: 19vmin;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
