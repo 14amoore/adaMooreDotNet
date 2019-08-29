@@ -177,6 +177,16 @@ h4 {
   color: rgb(3, 218, 251);
 }
 
+.changeColor12 {
+  background: lavender;
+  color: hsl(120, 4%, 22%);
+}
+
+.changeColor13 {
+  background: hsl(120, 4%, 22%);
+  color: lavender;
+}
+
 #email {
   text-decoration: none;
 }
