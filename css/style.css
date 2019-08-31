@@ -61,6 +61,29 @@ p {
   background: hsl(360, 100%, 100%);
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 5px;
+  padding-bottom: 75px;
+}
+
+.one {
+  display: grid;
+  grid-template-columns: fit-content(300px) fit-content(300px) 1fr;
+  padding-top: 35px;
+  padding-bottom: 65px;
+}
+
+.spin {
+  transform: rotate(90deg);
+}
+
+#smaller {
+  height: 400px;
+  width: auto;
+}
+
 svg {
   width: 100%;
 }
