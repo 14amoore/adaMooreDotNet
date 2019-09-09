@@ -1,0 +1,31 @@
+body {
+  font-family: Helvetica;
+  background-color: fuchsia;
+}
+label {
+  display: block;
+}
+
+.title {
+  display: block;
+  width: 40%;
+  height: 6%;
+}
+
+.content {
+  display: block;
+  width: 100%;
+  height: 30%;
+}
+
+h3 {
+  border-style: solid solid none solid;
+  background-color: aqua;
+  margin: 0;
+}
+
+p {
+  border-style: solid;
+  background-color: chartreuse;
+  margin: 0;
+}

@@ -1,0 +1,48 @@
+<!-- This is working with blog3 -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/blogStyle.css" />
+    <script src="./js/vue.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="post">
+      <form v-on:submit.prevent="newPost">
+        <label for="new-post">Share some feels:</label>
+        <textarea class="title"
+          v-model="newPostTitle"
+          id="new-post"
+          placeholder="Title here"
+        ></textarea>
+        <textarea class="content"
+          v-model="newPostContent"
+          id="new-post"
+          placeholder="Content here"
+        ></textarea>
+        <button>Do. IT.</button>
+      </form>
+      <post-title
+      is="post-title"
+      v-for="(post, index) in posts"
+      v-bind:key="post.id"
+      v-bind:title="post.title"
+      v-on:remove="posts.splice(index, 1)"
+      >
+      </post-title>
+      <post-content
+      is="post-content"
+      v-for="(post, index) in posts"
+      v-bind:key="post.id"
+      v-bind:content="post.content"
+      v-on:remove="posts.splice(index, 1)"
+      >
+      </post-content>
+      </div>
+    </div>
+    <script src="./js/blog3.js"></script>
+  </body>
+</html>
+
