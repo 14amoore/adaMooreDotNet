@@ -84,6 +84,11 @@ p {
   width: auto;
 }
 
+#smaller:hover {
+  margin: 40%;
+  transform: scale(2);
+}
+
 svg {
   width: 100%;
 }
