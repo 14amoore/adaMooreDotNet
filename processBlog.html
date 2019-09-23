@@ -399,6 +399,55 @@
       comfort I have with ordinary JS, but this week was a nice way to start
       that process.
     </p>
+    <h3>Week 11: 9/10</h3>
+    <p class="slim">
+      What I referred to last week as a bugaboo, Vue, may be slowly morphing
+      into a boo. I spent this week working with Vuex. Vuex is “a state
+      management pattern and library for Vue.js applications.” This quote is
+      from the Vuex website. So what does this mean to people who aren’t quite
+      fluent in JS speak?
+    </p>
+    <p class="slim">
+      This basically means this library is made to keep track of the state of an
+      app built with Vue. State can be anything developers would like users to
+      be able to keep track of. This best example of this is “likes”, and
+      comments. We’re basically making facebook like apps. Because much of our
+      use of the internet is narcissism this is an important thing to know how
+      to make.
+    </p>
+    <p class="slim">
+      Many people wouldn’t use the internet if they weren’t able to know how
+      many people were renting to the “content” they post.
+    </p>
+    <p class="slim">
+      So what did I make to satisfy my own narcissistic tendencies?
+      <a class="whiLink" href="vxBlog.html">I didn’t make anything.</a> I
+      improved upon the blog I created last week. Thanks to Vuex it now keeps
+      track of the number of posts one has made. When a post is deleted the
+      count decreases. The inverse happens when a post is made.
+    </p>
+    <p class="slim">
+      I also learned a lot more about event handlers. The button that appears
+      when a post is created now causes two events to fire when it is clicked.
+      The first event is the deletion of the post, the second is the post is
+      taken out of the store created by Vuex.
+    </p>
+    <p class="slim">
+      In addition to event handlers I also learned much more about manipulating
+      arrays in Vue. Because all of the posts are contained within an array I
+      wanted any user to be able to delete individual posts by clicking the
+      button created by the post. Vue has two ways of doing this, splice and
+      $delete. I ended up using splice, but as far as I can tell the two have
+      almost the exact same functionality.
+    </p>
+    <p class="slim">
+      I also know that splicing isn’t the best way to handle this type of
+      operation in many types of arrays. It is preferable to actually create an
+      entirely new array, rather than mutate the original. But in the case of a
+      blog, where the source of truth is the author themselves it is fine, in my
+      opinion, for them to mutate the original array.
+    </p>
+    <p class="slim">Onwards to Node.js and backend development!</p>
     <p class="slim"><a class="whiLink" href="index.html"><- Back</a></p>
   </body>
   <script src="js/scripts.js"></script>
