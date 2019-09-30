@@ -215,6 +215,26 @@ h4 {
   color: lavender;
 }
 
+.changeColor14 {
+  background: yellow;
+  color: hsl(120, 4%, 22%);
+}
+
+.changeColor15 {
+  background: hsl(120, 4%, 22%);
+  color: yellow;
+}
+
+.changeColor16 {
+  background: orange;
+  color: hsl(120, 4%, 22%);
+}
+
+.changeColor17 {
+  background: hsl(120, 4%, 22%);
+  color: orange;
+}
+
 #email {
   text-decoration: none;
 }
