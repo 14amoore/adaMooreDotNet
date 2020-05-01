@@ -7,6 +7,17 @@ window.onload = async () => {
 
 function wakeUpButton() {
   document.querySelector('#sound').disabled = false;
+  document.querySelector('#sound').style.visibility = 'visible';
+}
+
+function wakeScreen() {
+  document.querySelector('body').className += null;
+  document.querySelector('#state').innerHTML = ' ';
+}
+
+function clickAnimation() {
+  document.querySelector('body').className += 'newColor';
+  document.querySelector('#sound').style.visibility = 'hidden';
 }
 
 function randomValue() {
@@ -107,7 +118,7 @@ async function getIpData() {
 
   document.querySelector(
     '#state'
-  ).innerHTML = `Your IP address is ${dispIp}. You are in ${state} State and your zipcode is ${zip}. This piece will play for approximately ${playTime} seconds`;
+  ).innerHTML = `Your IP address is ${dispIp}. You are in ${state} State and your zipcode is ${zip}. This piece will play for approximately ${playTime} seconds.`;
   const ip = data.ip.split('.');
   const ipArray = [];
   for (let i = 0; i < ip.length; i += 1) {
@@ -208,6 +219,7 @@ async function getIpData() {
   console.log(oscFreq, osc2Freq, osc3Freq, osc4Freq);
 
   setTimeout(wakeUpButton, realRest);
+  setTimeout(wakeScreen, realRest);
 
   return realRest;
 }
@@ -222,3 +234,4 @@ function polyTry() {
 }
 
 document.querySelector('#sound').addEventListener('click', getIpData);
+document.querySelector('#sound').addEventListener('click', clickAnimation);
