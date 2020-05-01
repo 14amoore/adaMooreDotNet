@@ -3,6 +3,10 @@ function getRandomInt(max) {
   return Math.ceil(Math.random() * Math.floor(max));
 }
 
+function randomScale(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
 function main() {
   const canvas = document.querySelector('#stretcher');
   const renderer = new THREE.WebGLRenderer({ canvas });
@@ -30,7 +34,7 @@ function main() {
   }
 
   const objects = [];
-  const spread = 15;
+  const spread = 20;
 
   function addObject(x, y, obj) {
     obj.position.x = x * spread;
@@ -47,7 +51,7 @@ function main() {
 
     const hue = Math.random();
     const saturation = 1;
-    const luminance = 0.5;
+    const luminance = randomScale(0.5, 1);
     material.color.setHSL(hue, saturation, luminance);
     return material;
   }
@@ -67,8 +71,8 @@ function main() {
     loader.load('three/helvetiker_bold.typeface.json', font => {
       const geometry = new THREE.TextBufferGeometry('ADAMOORE.NET', {
         font: font,
-        size: 8.0,
-        height: 0.2,
+        size: randomScale(8.0, 14),
+        height: randomScale(0.2, 2),
         curveSegments: 12,
         bevelEnabled: true,
         bevelThickness: 0.15,
@@ -82,7 +86,7 @@ function main() {
       const parent = new THREE.Object3D();
       parent.add(mesh);
 
-      addObject(getRandomInt(-2), getRandomInt(-2), parent);
+      addObject(getRandomInt(-2), getRandomInt(2), parent);
     });
   }
   {
@@ -90,8 +94,8 @@ function main() {
     loader2.load('three/helvetiker_bold.typeface.json', font => {
       const geometry = new THREE.TextBufferGeometry('Welcome to', {
         font: font,
-        size: 8.0,
-        height: 0.2,
+        size: randomScale(6.0, 12),
+        height: randomScale(0.2, 2),
         curveSegments: 12,
         bevelEnabled: true,
         bevelThickness: 0.15,
