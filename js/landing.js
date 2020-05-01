@@ -1,7 +1,20 @@
 // global THREE
+const colors = [
+  0x000000,
+  0x404040,
+  0xd3d3d3,
+  0x646464,
+  0xc900d3,
+  0xbe0087,
+  0x0006be,
+  0x3bbe00
+];
+
 function getRandomInt(max) {
-  return Math.ceil(Math.random() * Math.floor(max));
+  return Math.floor(Math.random() * Math.floor(max));
 }
+
+// console.log(colors[getRandomInt(8)]);
 
 function randomScale(min, max) {
   return Math.random() * (max - min) + min;
@@ -19,7 +32,7 @@ function main() {
   camera.position.z = 120;
 
   const scene = new THREE.Scene();
-  scene.background = new THREE.Color(0x000000);
+  scene.background = new THREE.Color(colors[getRandomInt(8)]);
 
   function resizeRendererToDisplaySize(renderer) {
     const canvas = renderer.domElement;
