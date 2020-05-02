@@ -103,7 +103,7 @@ function main() {
       const parent = new THREE.Object3D();
       parent.add(mesh);
 
-      addObject(randomScale(-2, 2), randomScale(-2, 2), parent);
+      addObject(randomScale(-1, 1), randomScale(-1, 1), parent);
     });
   }
   {
@@ -126,7 +126,7 @@ function main() {
       const parent = new THREE.Object3D();
       parent.add(mesh);
 
-      addObject(randomScale(-2, 2), randomScale(-2, 2), parent);
+      addObject(randomScale(-1.5, 1.5), randomScale(-1.5, 1.5), parent);
     });
   }
 
