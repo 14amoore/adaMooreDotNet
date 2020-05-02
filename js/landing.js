@@ -11,7 +11,11 @@ const colors = [
 ];
 
 function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max));
+  return Math.floor(Math.random() * max);
+}
+
+function getRandomNum(max) {
+  return Math.random() * max;
 }
 
 // console.log(colors[getRandomInt(8)]);
@@ -81,7 +85,7 @@ function main() {
 
   {
     const loader = new THREE.FontLoader();
-    loader.load('three/helvetiker_bold.typeface.json', font => {
+    loader.load('three/Staatliches_Regular.json', font => {
       const geometry = new THREE.TextBufferGeometry('ADAMOORE.NET', {
         font: font,
         size: randomScale(8.0, 14),
@@ -99,12 +103,12 @@ function main() {
       const parent = new THREE.Object3D();
       parent.add(mesh);
 
-      addObject(getRandomInt(-2), getRandomInt(2), parent);
+      addObject(randomScale(-2, 2), randomScale(-2, 2), parent);
     });
   }
   {
     const loader2 = new THREE.FontLoader();
-    loader2.load('three/helvetiker_bold.typeface.json', font => {
+    loader2.load('three/Staatliches_Regular.json', font => {
       const geometry = new THREE.TextBufferGeometry('Welcome to', {
         font: font,
         size: randomScale(6.0, 12),
@@ -122,7 +126,7 @@ function main() {
       const parent = new THREE.Object3D();
       parent.add(mesh);
 
-      addObject(getRandomInt(-2.5), getRandomInt(2.5), parent);
+      addObject(randomScale(-2, 2), randomScale(-2, 2), parent);
     });
   }
 
