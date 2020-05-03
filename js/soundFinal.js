@@ -118,7 +118,7 @@ async function getIpData() {
 
   document.querySelector(
     '#state'
-  ).innerHTML = `Your IP address is ${dispIp}. You are in ${state} State and your zipcode is ${zip}. This piece will play for approximately ${playTime} seconds.`;
+  ).innerHTML = `Your IP address is ${dispIp}. You are in ${state} State and the zipcode associated with your IP is ${zip}. This piece will play for approximately ${playTime} seconds.`;
   const ip = data.ip.split('.');
   const ipArray = [];
   for (let i = 0; i < ip.length; i += 1) {
