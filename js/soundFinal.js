@@ -1,4 +1,5 @@
-// uncomment below before deployment
+/* global Tone */
+
 window.onload = async () => {
   window.alert('Click here to initialize program.');
   await Tone.start();
@@ -118,7 +119,7 @@ async function getIpData() {
   const ip = data.ip.split('.');
   const ipArray = [];
   for (let i = 0; i < ip.length; i += 1) {
-    const numIp = parseInt(ip[i]);
+    const numIp = parseInt(ip[i], 10);
     ipArray.push(numIp);
   }
   console.log(ipArray, playTime);
