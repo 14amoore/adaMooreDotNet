@@ -38,6 +38,7 @@ const osc = new Tone.MonoSynth({
     attack: 0.1
   }
 }).toMaster();
+osc.volume.value = -20;
 
 const osc2 = new Tone.MonoSynth({
   oscillator: {
@@ -53,6 +54,7 @@ const osc2 = new Tone.MonoSynth({
     attack: 1
   }
 }).toMaster();
+osc2.volume.value = -20;
 
 const osc3 = new Tone.MonoSynth({
   oscillator: {
@@ -68,6 +70,7 @@ const osc3 = new Tone.MonoSynth({
     attack: 1
   }
 }).toMaster();
+osc3.volume.value = -20;
 
 const osc4 = new Tone.MonoSynth({
   oscillator: {
@@ -83,18 +86,10 @@ const osc4 = new Tone.MonoSynth({
     attack: 1
   }
 }).toMaster();
+osc4.volume.value = -20;
 
 const noise = new Tone.NoiseSynth().toMaster();
 noise.volume.value = -20;
-
-const poly = new Tone.PolySynth(4, Tone.MonoSynth, {
-  oscillator: {
-    type: 'sine'
-  },
-  envelope: {
-    attack: 0.1
-  }
-}).toMaster();
 
 function getRandomInt(max) {
   return Math.ceil(Math.random() * Math.floor(max));
@@ -106,7 +101,8 @@ async function getIpData() {
   // console.log(data);
   const state = data.region;
   const dispIp = data.ip;
-  const zip = parseInt(data.postal_code, 10);
+  const dispZip = data.postal_code;
+  const zip = parseInt(dispZip, 10);
   // const playTime = zip / 100;
   // const playTime = 20;
   let playTime;
@@ -118,7 +114,7 @@ async function getIpData() {
 
   document.querySelector(
     '#state'
-  ).innerHTML = `Your IP address is ${dispIp}. You are in ${state} State and the zipcode associated with your IP is ${zip}. This piece will play for approximately ${playTime} seconds.`;
+  ).innerHTML = `Your IP address is ${dispIp}. You are in ${state} and the zipcode associated with your IP is ${dispZip}. This piece will play for approximately ${playTime} seconds.`;
   const ip = data.ip.split('.');
   const ipArray = [];
   for (let i = 0; i < ip.length; i += 1) {
@@ -199,10 +195,8 @@ async function getIpData() {
     noise.triggerAttack(osc2TrigRel).triggerRelease(osc4TrigRel);
   } else if (prelimFreq4 > 40 && prelimFreq4 <= 200) {
     osc4Freq = prelimFreq4;
-    osc4.volume.value = -10;
     osc4.triggerAttack(osc4Freq, osc3TrigRel).triggerRelease(osc4TrigRel);
   } else {
-    osc4.volume.value = -10;
     osc4Freq = Math.random() * 200;
     osc4.triggerAttack(osc4Freq, osc3TrigRel).triggerRelease(osc4TrigRel);
   }
@@ -222,15 +216,6 @@ async function getIpData() {
   setTimeout(wakeScreen, realRest);
 
   return realRest;
-}
-
-function polyTry() {
-  // poly.triggerAttack(60).triggerRelease(60, '+3');
-  // poly.triggerAttack(100, '+2').triggerRelease(100, '+5');
-  osc.triggerAttack(60).triggerRelease('+2');
-  osc2.triggerAttack(100, '+2').triggerRelease('+4');
-  osc3.triggerAttack(150, '+4').triggerRelease('+8');
-  osc4.triggerAttack(180, '+8').triggerRelease('+10');
 }
 
 document.querySelector('#sound').addEventListener('click', getIpData);
