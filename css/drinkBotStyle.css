@@ -55,6 +55,11 @@ button {
   margin: 1%;
 }
 
+video {
+  width: 68%;
+  margin: 0em 12em 0em 12em;
+}
+
 img {
   width: 35%;
   height: auto;
