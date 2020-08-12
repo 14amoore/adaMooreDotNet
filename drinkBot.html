@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/drinkBotStyle.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>🤖🍹 DrinkBot!</title>
+  </head>
+  <body class="ogColor">
+    <h1>🤖🍹 <a href="https://twitter.com/DBot2020">DrinkBot!</a></h1>
+    <div class="imageContainer">
+      <img class="item" src="assets/drink2.jpg" alt="" />
+      <img class="item" src="assets/drink3.jpg" alt="" />
+    </div>
+    <h2>
+      DrinkBot was created for two reasons. The first being a continuation of my
+      earlier work creating Twitter bots. My first bot, launched two years ago,
+      was called <a href="project2.html">BreadBot</a>.
+    </h2>
+    <h2>
+      BreadBot was a simple twitter bot that tweeted out a type of bread from a
+      list of breads from around the world. The list was taken from wikipedia.
+      Because this project was done so long ago it was very rudimentary. In the
+      time since BreadBot went live my abilities as a developer have grown and I
+      wanted to challenge myself.
+    </h2>
+    <h2>
+      The second reason for making DrinkBot was the fact that during quarantine
+      no one in New York has been able to a bar until recently and, even now the
+      experience is not one that many people feel comfortable with. The only
+      solution is to make drinks at home. Unfortunately making a good drink
+      isn't as easy at it seems. Bartending is a craft like any other, it takes
+      practice and skill to make a drink properly.
+    </h2>
+    <h2>
+      This is where DrinkBot comes in! Every day at 5pm eastern time it tweets
+      out a new recipe. The recipes are taken from
+      <a href="https://punchdrink.com/recipe-archives/"
+        >Punch Magazine's recipe archive</a
+      >. Punch does not have an API so I had to scrape recipes from their
+      archive. Because Punch's recipe archive is an SPA,
+      <a href="https://www.npmjs.com/package/puppeteer">Puppeteer</a> was the
+      best choice for this task. Puppeteer “provides a high-level API to control
+      Chrome and Chromium over the DevTools Protocol.”. Puppeteer works
+      perfectly to generate the pre-rendered content of Punch’s recipe archive.
+    </h2>
+    <h2>
+      DrinkBot is deployed to a heroku server and runs using Node.js. Everyday
+      at 5pm the program runs, sending a headless browser to Punch. When Punch’s
+      recipe page is loaded the browser then goes to a page chosen at random.
+      Once the random recipe page is loaded, the browser chooses a random recipe
+      from that page, a link to the recipe, and downloads an image of the drink.
+    </h2>
+    <h2>
+      Once all of the content is ready, using twitter as a database it compares
+      the tweet that is ready to be sent against the tweets that have already
+      been posted. If there is a match a new recipe is scraped until one is
+      found that has not already been posted. This approached allowed me to
+      streamline the process of keeping track of what recipes have already been
+      posted. The other approach would have been to use a separate database,
+      which would have dramatically increased the time needed to develop this
+      Bot.
+    </h2>
+    <h2>I hope you enjoy the drinks as much as I enjoyed making DrinkBot.</h2>
+    <h2><a href="landing.html"><-Back</a></h2>
+    <script src="js/scripts2.js"></script>
+  </body>
+</html>

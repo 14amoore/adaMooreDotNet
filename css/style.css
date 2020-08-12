@@ -25,6 +25,57 @@ p {
   margin-bottom: 150px;
 }
 
+svg {
+  width: 100%;
+}
+
+h1 {
+  font-family: 'mono45-headline', monospace;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 5em;
+  padding: 0;
+  line-height: 1.2em;
+}
+
+h2 {
+  font-family: 'mono45-headline', monospace;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 5em;
+  margin: 0;
+  line-height: 1.2em;
+  margin-bottom: 150px;
+}
+
+h3 {
+  font-family: 'mono45-headline', monospace;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 5em;
+  margin: 0;
+  line-height: 1.2em;
+  margin-bottom: 50px;
+  padding-top: 10px;
+}
+
+h4 {
+  font-family: 'mono45-headline', monospace;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 5em;
+  margin: 0;
+  line-height: 0.85em;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+img {
+  width: 68%;
+  margin: 0em 12em 0em 12em;
+  height: auto;
+}
+
 .container {
   display: flex;
   flex-flow: row wrap;
@@ -87,48 +138,6 @@ p {
 #smaller:hover {
   margin: 40%;
   transform: scale(2);
-}
-
-svg {
-  width: 100%;
-}
-
-h1 {
-  font-size: 32px;
-  text-align: right;
-  width: 100%;
-}
-
-h2 {
-  font-family: 'mono45-headline', monospace;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 5em;
-  margin: 0;
-  line-height: 1.2em;
-  margin-bottom: 150px;
-}
-
-h3 {
-  font-family: 'mono45-headline', monospace;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 5em;
-  margin: 0;
-  line-height: 1.2em;
-  margin-bottom: 50px;
-  padding-top: 10px;
-}
-
-h4 {
-  font-family: 'mono45-headline', monospace;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 5em;
-  margin: 0;
-  line-height: 0.85em;
-  margin-top: 10px;
-  margin-bottom: 0;
 }
 
 #graffContainer {
