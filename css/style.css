@@ -76,6 +76,14 @@ img {
   height: auto;
 }
 
+a {
+  color: white;
+}
+
+a:hover {
+  color: hsl(295, 100%, 77%);
+}
+
 .container {
   display: flex;
   flex-flow: row wrap;
