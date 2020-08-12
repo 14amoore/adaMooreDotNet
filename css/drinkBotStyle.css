@@ -200,7 +200,7 @@ a:hover[class~='changeLink'] {
 .imageContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-bottom: 2em;
 }
 
