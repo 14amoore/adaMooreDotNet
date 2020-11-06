@@ -248,12 +248,16 @@ a:hover[class~='changeLink'] {
   visibility: hidden;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 1001px) {
   h1 {
-    margin: 0.75em;
+    margin: 0.2em;
   }
   h2 {
     margin: 1em;
+  }
+  img {
+    width: 50%;
+    height: auto;
   }
   video {
     width: 75%;
@@ -273,7 +277,7 @@ a:hover[class~='changeLink'] {
   }
   img {
     width: 50%;
-    height: auto;
+    height: 100%;
   }
   video {
     width: 95%;
