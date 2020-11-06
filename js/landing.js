@@ -14,18 +14,13 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
-function getRandomNum(max) {
-  return Math.random() * max;
-}
-
-// console.log(colors[getRandomInt(8)]);
-
 function randomScale(min, max) {
   return Math.random() * (max - min) + min;
 }
 
 function main() {
   const canvas = document.querySelector('#stretcher');
+  console.log(canvas.clientWidth, canvas.clientHeight);
   const renderer = new THREE.WebGLRenderer({ canvas });
 
   const fov = 40; // fov stand for field of view
@@ -39,11 +34,12 @@ function main() {
   scene.background = new THREE.Color(colors[getRandomInt(8)]);
 
   function resizeRendererToDisplaySize(renderer) {
-    const canvas = renderer.domElement;
+    const canvasRenderer = renderer.domElement;
     const pixelRatio = window.devicePixelRatio;
-    const width = (canvas.clientWidth * pixelRatio) | 0;
-    const height = (canvas.clientHeight * pixelRatio) | 0;
-    const needResize = canvas.width !== width || canvas.height !== height;
+    const width = canvasRenderer.clientWidth * pixelRatio || 0;
+    const height = canvasRenderer.clientHeight * pixelRatio || 0;
+    const needResize =
+      canvasRenderer.width !== width || canvasRenderer.height !== height;
     if (needResize) {
       renderer.setSize(width, height, false);
     }
@@ -142,8 +138,8 @@ function main() {
     time *= 0.001; // converting time to seconds
 
     if (resizeRendererToDisplaySize(renderer)) {
-      const canvas = renderer.domElement;
-      camera.aspect = canvas.clientWidth / canvas.clientHeight;
+      const canvasResize = renderer.domElement;
+      camera.aspect = canvasResize.clientWidth / canvasResize.clientHeight;
       camera.updateProjectionMatrix();
     }
     objects.forEach((obj, ndx) => {
