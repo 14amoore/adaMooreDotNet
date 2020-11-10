@@ -263,7 +263,7 @@ a:hover[class~='changeLink'] {
   }
   .cavItem {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
   .guestEmail {
     font-family: sans-serif;
@@ -291,7 +291,7 @@ a:hover[class~='changeLink'] {
   }
   .cavItem {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
   .guestEmail {
     font-family: sans-serif;
@@ -299,7 +299,7 @@ a:hover[class~='changeLink'] {
   }
 }
 
-@media only screen and (min-width: 375px) and (max-width: 812px) {
+@media only screen and (min-width: 350px) and (max-width: 812px) {
   h1 {
     font-size: 2em;
     margin: 0.15em;
@@ -319,7 +319,7 @@ a:hover[class~='changeLink'] {
   }
   .cavItem {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
   .guestEmail {
     font-family: sans-serif;
