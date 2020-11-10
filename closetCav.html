@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/drinkBotStyle.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>🥂 Closet Cav!</title>
+  </head>
+  <body class="ogColor">
+    <h1>🍷 <a href="https://closet-cav.web.app/">Have a look in the Cav</a></h1>
+    <div class="imageContainer">
+      <img class="cavItem" src="assets/closetCav1.jpg" alt="landing page" />
+    </div>
+    <h2>Overview:</h2>
+    <h2>
+      My partner works in the food and drink industry, because of this we are
+      lucky enough to have an ever expanding wine collection. Wine is best
+      stored in a cool, dark place. The area in our apartment best fitting that
+      description is a small coat closet. While a coat closet is dark, and cool
+      enough, it does not lend itself to easy examination of our inventory. To
+      see what is in the back of the closet we have to unload everything,
+      because of this we often forget what exactly is living back there.
+    </h2>
+    <h2>
+      Closet Cav is a full stack web app, using node.js, reach router, firebase
+      as the database, react.js and react bootstrap for the front-end. Users are
+      authenticated using email and password. I chose firebase because it is a
+      realtime database that my partner and I can access at the same time, when
+      one of us adds or deletes a bottle the other sees these changes happen
+      immediately. I chose react and react bootstrap due to their functionality,
+      and popularity within the front-end development industry.
+    </h2>
+    <h2>The Problem:</h2>
+    <h2>
+      Closet Cav was developed to show us what wine is currently in our coat
+      closet by simply looking at our phones or computers. We needed to be able
+      to enter and delete wines from inventory, and search for wines based on
+      color, or country of origin.
+    </h2>
+    <h2>
+      This app was created for the use my partner and I, and also as a proof of
+      concept project to be shown to other members of the food and drink
+      industry for further UX research.
+    </h2>
+    <h2>Process:</h2>
+    <h2>
+      This project started out with a simple complaint. “Why is it that I never
+      know exactly what’s in the back of the closet?” I know this is a complaint
+      similar to that of many small children. While children are haunted by the
+      specter of creatures lurking in the dark, my partner was annoyed at not
+      knowing what delicious bottle of wine might be forgotten in the dark. This
+      complaint was the perfect opportunity to make a full stack web app that
+      could answer this question in a simple and user friendly way.
+    </h2>
+    <h2>
+      I chose react.js because of its great functionality and overwhelming
+      popularity. I’ve always coded all of the css for my projects with either
+      SCSS, or vanilla CSS. Bootstrap is a tool I’ve heard a lot about and this
+      seemed like an ideal opportunity to try it out. I chose firebase as the
+      database for this project because of it’s ability to act as a realtime
+      database, there’s no need for me to refresh the page for the inventory to
+      update. As someone who is relatively new to databases it was also
+      important for me to choose something that was slightly more user friendly
+      than tools like mongoDB. The routing is handled by reach router, and the
+      backend is handled by node.js.
+    </h2>
+    <h2>
+      After settling on the tech stack, my partner and I spoke about the
+      features she would like. At its most basic I knew it would be a C.R.U.D.
+      (create, read, update, delete) app. I found that wine is a little more
+      complicated than your average blog, or reminder app, there is a lot of
+      information about wine that needs to be entered into any inventory. This
+      is because of how sprawling and complicated the wine world can be. After
+      much talk about the aspects of wine she found most pertinent we settled on
+      color, country of origin, producer, grape varietal(s), and vintage as the
+      most important information.
+    </h2>
+    <h2>
+      The next challenge to tackle was how the information was to be entered. I
+      chose dropdown menus for color, and country of origin. I chose to give
+      users a predetermined set of options for color and country because those
+      options are the most limited and it made the process of adding wines to
+      the app faster and more accurate. With options there’s no need to worry
+      about spelling. The three other pieces of information, producer name,
+      varietals, and vintage must be typed in by the user.
+    </h2>
+    <h2>
+      There are thousands of producers in France alone, grape varietals are
+      equally numerous so it made sense to ask the user to type this information
+      in. Some wines, mainly fortified wines, do not have a specific vintage
+      printed on their bottle, users must either enter a four digit number or
+      nothing at all. If the user attempts to enter something other than a four
+      digit number an error message is displayed. You can see the final UI
+      below.
+    </h2>
+    <div class="imageContainer">
+      <img class="cavItem" src="assets/closetCav3.jpg" alt="inventory page" />
+    </div>
+    <h2>Outcomes and Lessons:</h2>
+    <h2>
+      For the two of us this app works very well. Now, when we’re deciding what
+      to open we know exactly what our options are, most importantly we don’t
+      need to unpack the whole closet. In a field as large as wine there is a
+      lot of information people feel is important to include when creating an
+      inventory of their collection. The most important piece of information I
+      did not include in this iteration was region, and sub-region for each of
+      the countries. Regions and sub-regions are most important in well known
+      wine producing countries like Italy, France, and the USA.
+    </h2>
+    <h2>
+      After showing this app to people who work across the spectrum of the food
+      and beverage industry they had a lot of suggestions for improvement I
+      would like to incorporate. The top three being, a favorites list,
+      conditionally rendered input sections for regions and sub-regions, and a
+      way to add more than one bottle at a time.
+    </h2>
+    <h2>
+      Conditional rendering is one of the great advantages of front-end
+      frameworks like react. A favorites list is a great way for users to keep
+      track of what they like, and the ability to add more than one bottle when
+      entering wine would be very useful for people who tend to buy multiple
+      bottles from the same vintage.
+    </h2>
+    <h2>
+      I'm going to keep researching and working on this project because of the
+      positive feedback I've gotten from the people I've shown this too. I've
+      even had some people ask me to create an account for their own use! You
+      can click the link at the top of the page to have a look for yourself.
+      Login with the email: <a>guest<a class="guestEmail">@</a><a>me.com</a>, and
+      use the password: 123456. Guests are only able to browser and filter the
+      collection.
+    </h2>
+    <h2><a href="landing.html"><-Back</a></h2>
+    <script src="js/scripts2.js"></script>
+  </body>
+</html>

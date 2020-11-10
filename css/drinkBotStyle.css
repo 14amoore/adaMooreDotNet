@@ -3,7 +3,7 @@
 body {
   /* height: 100%; */
   transition: 1s all;
-  font-family: 'mono45-headline', monospace;
+  font-family: 'mono45-headline', Helvetica, sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 20px;
@@ -193,10 +193,7 @@ a:hover[class~='changeLink'] {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 2em;
-}
-
-.item {
+  margin: 0;
 }
 
 #links {
@@ -253,7 +250,7 @@ a:hover[class~='changeLink'] {
     margin: 0.2em;
   }
   h2 {
-    margin: 1em;
+    margin: 0.5em;
   }
   img {
     width: 50%;
@@ -263,6 +260,13 @@ a:hover[class~='changeLink'] {
     width: 75%;
     height: auto;
     margin: 0 0 0 60;
+  }
+  .cavItem {
+    width: 100%;
+    height: auto;
+  }
+  .guestEmail {
+    font-family: sans-serif;
   }
 }
 
@@ -284,6 +288,10 @@ a:hover[class~='changeLink'] {
     height: auto;
     margin: 0;
   }
+  .cavItem {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media only screen and (min-width: 375px) and (max-width: 812px) {
@@ -303,5 +311,9 @@ a:hover[class~='changeLink'] {
     width: 95%;
     height: auto;
     margin: 0;
+  }
+  .cavItem {
+    width: 100%;
+    height: auto;
   }
 }
