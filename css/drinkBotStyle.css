@@ -267,6 +267,7 @@ a:hover[class~='changeLink'] {
   }
   .guestEmail {
     font-family: sans-serif;
+    background: none;
   }
 }
 
@@ -292,6 +293,10 @@ a:hover[class~='changeLink'] {
     width: 100%;
     height: auto;
   }
+  .guestEmail {
+    font-family: sans-serif;
+    background: none;
+  }
 }
 
 @media only screen and (min-width: 375px) and (max-width: 812px) {
@@ -315,5 +320,9 @@ a:hover[class~='changeLink'] {
   .cavItem {
     width: 100%;
     height: auto;
+  }
+  .guestEmail {
+    font-family: sans-serif;
+    background: none;
   }
 }
